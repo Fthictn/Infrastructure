@@ -1,22 +1,22 @@
+import json
 import flask
 import requests
-from flask import request, jsonify
 from requests.auth import HTTPBasicAuth
+from InternalSettings import InternalSettings
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
-
-@app.route('/getAlerts', methods=['GET'])
-def getalerts():
-    URL = "http://localhost:8065/settings/alerts"
-    r = requests.get(url=URL, auth=HTTPBasicAuth('Administrator', '123456'))
-    return jsonify(r.json())
+BASE_URL = "http://localhost:8075"
 
 
-@app.route('/', methods=['GET'])
-def getBooks():
-    return None
+@app.route('/getInternalSettings', methods=['GET'])
+def getInternalSettings():
+    url = BASE_URL + "/internalSettings"
+    response = requests.get(url=url, auth=HTTPBasicAuth('Administrator', '123456'))
+    response = json.loads(json.dumps(response.json()))
+    internalSettings = InternalSettings(**response)
+    return json.dumps(internalSettings._asdict())
 
 
 app.run()
