@@ -14,8 +14,8 @@ BASE_URL = "http://localhost:8075"
 def getInternalSettings():
     url = BASE_URL + "/internalSettings"
     response = requests.get(url=url, auth=HTTPBasicAuth('Administrator', '123456'))
-    jsonString = json.loads(json.dumps(response.json()))
-    internalSettings = InternalSettings(**jsonString)
+    settingsDictionary = json.loads(json.dumps(response.json()))
+    internalSettings = InternalSettings(**settingsDictionary)
     return json.dumps(internalSettings._asdict())
 
 
