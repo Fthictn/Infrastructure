@@ -2,13 +2,13 @@
 ## CASE 2
 **Version 1.0.0**
 
-# Prerequisites
+## Prerequisites
     #Docker engine
 
-# Couchbase ve Docker teknolojileri kullanılarak veritabanı oluşturulması işlemlerini içermektedir.
+## Couchbase ve Docker teknolojileri kullanılarak veritabanı oluşturulması işlemlerini içermektedir.
 <br/>
 
-## 1.Veritabanının Yaratılması
+### 1.Veritabanının Yaratılması
 <br/>
 
 **1.1 Couchbase sunucuların ayağa kaldırılması**
