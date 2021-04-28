@@ -33,20 +33,24 @@ Couchbase Image'in community-6.6.0 tagi lokale çekilir.
 **1.3 Veritabanının couchbase-ui kullanılarak oluşturulması**
 
 **1.3.1 Cluster oluşturulması** <br/>
-Setup New Cluster butonuna tıklanarak açılan dialogda clusterle ilgili bilgiler girilir. <br/>
+Setup New Cluster butonuna tıklanarak açılan dialogda clusterle ilgili bilgiler girilir. <br/> <br/>
 ![cluster oluşturma](https://github.com/Fthictn/Nisan28/blob/main/CASE1/images/creatingdb/case1-8.png) <br/>
 ![cluster oluşturma](https://github.com/Fthictn/Nisan28/blob/main/CASE1/images/creatingdb/case1-9.png) <br/> <br/>
 
-Bucket menüsü altında ADD BUCKET butonu ile bucket bilgileri girilerek Book adında bir bucket yaratılır. <br/>
+**1.3.2 Bucket eklenmesi** <br/>
+Bucket menüsü altında ADD BUCKET butonu ile bucket bilgileri girilerek Book adında bir bucket yaratılır. <br/> <br/>
 ![cluster oluşturma](https://github.com/Fthictn/Nisan28/blob/main/CASE1/images/creatingdb/case1-12.png) <br/> <br/>
 
-Servers menüsü altında ADD SERVER butonu ile yeni node eklenir. <br/>
+**1.3.3 Node eklenmesi** <br/>
+Servers menüsü altında ADD SERVER butonu ile yeni node eklenir. <br/> <br/>
 ![cluster oluşturma](https://github.com/Fthictn/Nisan28/blob/main/CASE1/images/creatingdb/case1-10.png) <br/> <br/>
 
-Servers menüsü altındaki Rebalance butonu ile rebalancing işlemi nodelar için uygulanır. <br/>
+**1.3.4 Nodelar arasında rebalance işleminin uygulanması** <br/>
+Servers menüsü altındaki Rebalance butonu ile rebalancing işlemi nodelar için uygulanır. <br/> <br/>
 ![cluster oluşturma](https://github.com/Fthictn/Nisan28/blob/main/CASE1/images/creatingdb/case1-11.png) <br/> <br/>
  
-İki node üzeride rebalance işlemi uygulanmış veritabanı oluşturulmuş olur. <br/>
+**SONUÇ** <br/>
+İki node üzeride rebalance işlemi uygulanmış veritabanı oluşturulmuş olur. <br/> <br/>
 ![cluster oluşturma](https://github.com/Fthictn/Nisan28/blob/main/CASE1/images/creatingdb/case1-14.png) <br/> <br/>
 
 
