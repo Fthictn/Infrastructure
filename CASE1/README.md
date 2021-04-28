@@ -18,7 +18,7 @@ Couchbase Image'in community-6.6.0 tagi lokale çekilir.
 
 `$ docker compose up` hazırlanan docker-compose dosyası kullanılarak iki ayrı portta couchbase ayağa kaldırılır. 
 
-**1.2 Cluster'ların couchbase-cli kullanılarak oluşturulması**
+**1.2 Veritabanının couchbase-cli kullanılarak oluşturulması**
 
 Couchbase cli komutları docker exec komutuyla kullanılabileceği gibi windows için **C:\Program Files\Couchbase\Server\bin>** dizini altında da çalıştırılabilir.
 
@@ -30,7 +30,7 @@ Couchbase cli komutları docker exec komutuyla kullanılabileceği gibi windows 
 
 `$ couchbase-cli rebalance -c 127.0.0.1:8065 --username Administrator --password 123456` nodelar arasındaki rebalancing işlemi gerçekleştirilir.
 
-**1.3 Cluster'ların couchbase-ui kullanılarak oluşturulması**
+**1.3 Veritabanının couchbase-ui kullanılarak oluşturulması**
 
 **1.3.1 Cluster oluşturulması** <br/>
 Setup New Cluster butonuna tıklanarak açılan dialogda clusterle ilgili bilgiler girilir. <br/>
