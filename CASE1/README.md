@@ -28,7 +28,7 @@ Couchbase Image'in community-6.6.0 tagi lokale çekilir.
 
 `$ couchbase-cli rebalance -c 127.0.0.1:8065 --username Administrator --password 123456` nodelar arasındaki rebalancing işlemi gerçekleştirilir.
 
-    #Not: Couchbase cli komutları docker exec komutuyla kullanılabileceği gibi windows için <br/> **C:\Program Files\Couchbase\Server\bin>** dizini altında da çalıştırılabilir.
+    Not: Couchbase cli komutları docker exec komutuyla kullanılabileceği gibi windows için <br/> **C:\Program Files\Couchbase\Server\bin>** dizini altında da çalıştırılabilir.
 
 **1.3 Veritabanının couchbase-ui kullanılarak oluşturulması**
 
