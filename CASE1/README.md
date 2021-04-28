@@ -20,8 +20,6 @@ Couchbase Image'in community-6.6.0 tagi lokale çekilir.
 
 **1.2 Veritabanının couchbase-cli kullanılarak oluşturulması**
 
-Couchbase cli komutları docker exec komutuyla kullanılabileceği gibi windows için **C:\Program Files\Couchbase\Server\bin>** dizini altında da çalıştırılabilir.
-
 `$ couchbase-cli cluster-init -c 127.0.0.1:8065 --cluster-username Administrator --cluster-password 123456 --services data,index,query --cluster-index-ramsize 256` 8065 portu üzerinde çalışacak cluster oluşturulur
 
 `$ couchbase-cli server-add 127.0.0.1:8065 --username Administrator --password 123456 --server-add 172.17.0.3 --server-add-username Administrator --server-add-password 718293 --services data ` 172.17.0.3 adresinde çalışan ikinci node eklenir.
@@ -29,6 +27,8 @@ Couchbase cli komutları docker exec komutuyla kullanılabileceği gibi windows 
 `$ couchbase-cli bucker-create --cluster 127.0.0.1:8065 --username Administrator --password 123456 --bucket employee --bucket-type couchbase --bucket-ramsize 100 --durability-min-level persistToMajority --enable-flush` employee adında bir bucket oluşturulur.
 
 `$ couchbase-cli rebalance -c 127.0.0.1:8065 --username Administrator --password 123456` nodelar arasındaki rebalancing işlemi gerçekleştirilir.
+
+**Not:** Couchbase cli komutları docker exec komutuyla kullanılabileceği gibi windows için **C:\Program Files\Couchbase\Server\bin>** dizini altında da çalıştırılabilir.
 
 **1.3 Veritabanının couchbase-ui kullanılarak oluşturulması**
 
