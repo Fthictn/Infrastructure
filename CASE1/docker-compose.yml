@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  basenode:
+    image: couchbase:community-6.6.0
+    ports:
+      - 8098:8091
+  secondnode:
+    image: couchbase:community-6.6.0
+    ports:
+      - 8099:8091
