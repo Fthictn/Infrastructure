@@ -1,5 +1,5 @@
 
-## CASE 2
+## CASE 1
 **Version 1.0.0**
 
 ## Prerequisites
