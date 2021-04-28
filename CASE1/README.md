@@ -22,11 +22,19 @@ Couchbase Image'in community-6.6.0 tagi lokale çekilir.
 
 `$ couchbase-cli cluster-init -c 127.0.0.1:8065 --cluster-username Administrator --cluster-password 123456 --services data,index,query --cluster-index-ramsize 256` 8065 portu üzerinde çalışacak cluster oluşturulur
 
+![cluster oluşturma](https://github.com/Fthictn/Nisan28/blob/main/CASE1/images/creatingdbwithcli/case1withcli%20-1.png) <br/>
+
 `$ couchbase-cli server-add 127.0.0.1:8065 --username Administrator --password 123456 --server-add 172.17.0.3 --server-add-username Administrator --server-add-password 718293 --services data ` 172.17.0.3 adresinde çalışan ikinci node eklenir.
+
+![cluster oluşturma](https://github.com/Fthictn/Nisan28/blob/main/CASE1/images/creatingdbwithcli/case1withcli%20-2.png) <br/>
 
 `$ couchbase-cli bucker-create --cluster 127.0.0.1:8065 --username Administrator --password 123456 --bucket employee --bucket-type couchbase --bucket-ramsize 100 --durability-min-level persistToMajority --enable-flush` employee adında bir bucket oluşturulur.
 
+![cluster oluşturma](https://github.com/Fthictn/Nisan28/blob/main/CASE1/images/creatingdbwithcli/case1withcli-4.png) <br/>
+
 `$ couchbase-cli rebalance -c 127.0.0.1:8065 --username Administrator --password 123456` nodelar arasındaki rebalancing işlemi gerçekleştirilir.
+
+![cluster oluşturma](https://github.com/Fthictn/Nisan28/blob/main/CASE1/images/creatingdbwithcli/case1withcli%20-3.png) <br/>
 
     Not: Couchbase cli komutları docker exec komutuyla kullanılabileceği gibi windows için C:\Program Files\Couchbase\Server\bin> dizininde, linux için ise /opt/couchbase/bin dizininde çalıştırılabilir.
 
